@@ -1,0 +1,27 @@
+Desktop
+- htop
+- iwd
+- nano
+- openssh
+- smartmon tools
+- vim
+- wget
+- wireless_tools
+- wpa_supplicant
+- xdg-utils
+
+Hyprland
+- dolphin
+- dunst
+- hyprland
+- kitty
+- qt5-wayland
+- qt6-wayland
+- wofi
+- xdg-desktop-portal-hyprland
+
+Extras
+- polkit
+- pipewire
+- sddm
+- multilib
