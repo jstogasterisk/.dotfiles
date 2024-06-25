@@ -1,2 +1,0 @@
-Hi this is a test of a symlink for the .config folder.
-Now it is placed there, and I can do this. ;)
