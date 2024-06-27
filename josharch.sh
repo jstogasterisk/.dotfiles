@@ -2,7 +2,7 @@
 
 part1="Hello and welcome!"
 part2=" This is the quick way of getting Josh's Arch Linux system up and running!"
-part3=" First, we need to create your file system."
+part3="First, we need to create your file system."
 delay=0.05
 pause=1
 
@@ -36,6 +36,6 @@ sleep $pause
 cd
 mkdir -p testfolder/Documents testfolder/Downloads testfolder/Pictures
 cd testfolder/Pictures
-
+mkdir Wallpapers
 echo
 echo "File system structure created."
