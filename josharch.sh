@@ -87,6 +87,7 @@ done
 
 # Add a pause before the seventh part
 sleep $pause
+echo
 
 # Type out the seventh part of the message and read input on the same line
 for (( i=0; i<${#part7}; i++ )); do
@@ -113,6 +114,7 @@ if [[ $REPLY =~ ^[Yy]$ ]] || [[ -z $REPLY ]]; then
 
   # Add a pause before part9
   sleep $pause
+  echo
 
   # Type out part9 and read input on the same line
   for (( i=0; i<${#part9}; i++ )); do
