@@ -24,6 +24,11 @@ Waybar
 - otf-font-awesome
 
 Extras
+- git
+- firefox
+- dolphin
+- htop
+- curl
 - polkit
 - pipewire
 - sddm
