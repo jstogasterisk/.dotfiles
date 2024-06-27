@@ -1,7 +1,7 @@
 #!/bin/bash
 
 part1="Hello and welcome!"
-part2=" This is the quick way of getting Josh's Arch Linux set up running!"
+part2=" This is the quick way of getting Josh's Arch Linux system up and running!"
 delay=0.05
 pause=1
 
