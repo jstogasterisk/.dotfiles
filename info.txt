@@ -20,6 +20,9 @@ Hyprland
 - wofi
 - xdg-desktop-portal-hyprland
 
+Waybar
+- otf-font-awesome
+
 Extras
 - polkit
 - pipewire
