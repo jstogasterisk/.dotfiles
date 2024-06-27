@@ -2,7 +2,8 @@
 
 part1="Hello and welcome!"
 part2=" This is the quick way of getting Josh's Arch Linux system up and running!"
-part3="First, we need to create your file system."
+part3=" First, we need to create your file system."
+part4=" File system structure created."
 delay=0.05
 pause=1
 
@@ -37,5 +38,15 @@ cd
 mkdir -p testfolder/Documents testfolder/Downloads testfolder/Pictures
 cd testfolder/Pictures
 mkdir Wallpapers
+
+# Add a pause before the fourth part
+sleep $pause
+
+# Move to a new line and type out the fourth part of the message
 echo
-echo "File system structure created."
+for (( i=0; i<${#part4}; i++ )); do
+  echo -n "${part4:$i:1}"
+  sleep $delay
+done
+
+echo
