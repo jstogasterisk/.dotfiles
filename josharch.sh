@@ -88,16 +88,14 @@ done
 # Add a pause before the seventh part
 sleep $pause
 
-# Move to a new line and type out the seventh part of the message
-echo
+# Type out the seventh part of the message on the same line as input
 for (( i=0; i<${#part7}; i++ )); do
   echo -n "${part7:$i:1}"
   sleep $delay
 done
 
-# Get user input
-echo
-read -p "" -n 1 -r
+# Get user input on the same line
+read -p " " -n 1 -r
 echo
 
 # Set default to 'y' if no input is provided
@@ -117,16 +115,14 @@ if [[ $REPLY =~ ^[Yy]$ ]] || [[ -z $REPLY ]]; then
   # Add a pause before part9
   sleep $pause
 
-  # Move to a new line and type out part9
-  echo
+  # Type out part9 on the same line as input
   for (( i=0; i<${#part9}; i++ )); do
     echo -n "${part9:$i:1}"
     sleep $delay
   done
 
-  # Get user input for reboot
-  echo
-  read -p "" -n 1 -r
+  # Get user input for reboot on the same line
+  read -p " " -n 1 -r
   echo
 
   # Set default to 'y' if no input is provided
