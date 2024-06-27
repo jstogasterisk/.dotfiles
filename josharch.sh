@@ -2,9 +2,6 @@
 
 clear
 sleep 1
-echo
-echo
-echo
 
 part1="Hello and welcome!"
 part2=" This is the quickest way of getting Josh's Arch Linux system up and running!"
@@ -14,6 +11,8 @@ part4="File system structure created."
 part5="Great! Now we can install some necessary packages."
 part6="No worries!"
 part7="Do you want to continue with the installation? [Y/n]"
+part8="All packages installed!"
+part9="Would you like to reboot? [Y/n]"
 delay=0.05
 pause=1
 dot_delay=0.5
@@ -104,6 +103,45 @@ echo
 # Set default to 'y' if no input is provided
 if [[ $REPLY =~ ^[Yy]$ ]] || [[ -z $REPLY ]]; then
   sudo pacman -S cmatrix
+
+  # Add a pause before part8
+  sleep $pause
+
+  # Move to a new line and type out part8
+  echo
+  for (( i=0; i<${#part8}; i++ )); do
+    echo -n "${part8:$i:1}"
+    sleep $delay
+  done
+
+  # Add a pause before part9
+  sleep $pause
+
+  # Move to a new line and type out part9
+  echo
+  for (( i=0; i<${#part9}; i++ )); do
+    echo -n "${part9:$i:1}"
+    sleep $delay
+  done
+
+  # Get user input for reboot
+  echo
+  read -p "" -n 1 -r
+  echo
+
+  # Set default to 'y' if no input is provided
+  if [[ $REPLY =~ ^[Yy]$ ]] || [[ -z $REPLY ]]; then
+    sudo reboot
+  else
+    part6="No worries!"
+    echo
+    for (( i=0; i<${#part6}; i++ )); do
+      echo -n "${part6:$i:1}"
+      sleep $delay
+    done
+    echo
+  fi
+
 else
   echo
   for (( i=0; i<${#part6}; i++ )); do
