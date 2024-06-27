@@ -1,12 +1,19 @@
 #!/bin/bash
 
+clear
+sleep 1
+echo
+echo
+echo
+
 part1="Hello and welcome!"
-part2=" This is the quick way of getting Josh's Arch Linux system up and running!"
+part2=" This is the quickest way of getting Josh's Arch Linux system up and running!"
 part3="First, we need to create your file system."
 creating="Creating file system"
 part4="File system structure created."
 part5="Great! Now we can install some necessary packages."
 part6="No worries!"
+part7="Do you want to continue with the installation? [Y/n]"
 delay=0.05
 pause=1
 dot_delay=0.5
@@ -79,9 +86,19 @@ for (( i=0; i<${#part5}; i++ )); do
   sleep $delay
 done
 
+# Add a pause before the seventh part
+sleep $pause
+
+# Move to a new line and type out the seventh part of the message
+echo
+for (( i=0; i<${#part7}; i++ )); do
+  echo -n "${part7:$i:1}"
+  sleep $delay
+done
+
 # Get user input
 echo
-read -p "Do you want to continue with the installation? [Y/n] " -n 1 -r
+read -p "" -n 1 -r
 echo
 
 # Set default to 'y' if no input is provided
