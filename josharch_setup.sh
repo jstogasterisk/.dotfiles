@@ -100,7 +100,7 @@ echo
 
 # Set default to 'y' if no input is provided
 if [[ $REPLY =~ ^[Yy]$ ]] || [[ -z $REPLY ]]; then
-  sudo pacman -S cmatrix
+  sudo pacman -S ly
 
   # Add a pause before part8
   sleep $pause
