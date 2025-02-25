@@ -20,7 +20,7 @@
       "format": "{}",
       "max-length": 35,
       "rewrite": {
-        "": "Josh Stogner"
+        "": "Desktop"
       },
       "separate-outputs": true,
     },
