@@ -34,7 +34,7 @@ button:hover {
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
-  color: #ffffff;
+  color: @flamingo;
 }
 
 
@@ -43,12 +43,12 @@ button:hover {
 }
 
 #workspaces button.focused {
-  background-color: @lavender;
+  background-color: @flamingo;
   box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: @flamingo;
 }
 
 #mode {
@@ -67,19 +67,19 @@ button:hover {
 }
 
 #pulseaudio {
-  color: @maroon;
+  color: @flamingo;
 }
 
 #network {
-  color: @yellow;
+  color: @flamingo;
 }
 
 #temperature {
-  color: @sky;
+  color: @flamingo;
 }
 
 #battery {
-  color: @green;
+  color: @flamingo;
 }
 
 #clock {
@@ -87,13 +87,13 @@ button:hover {
 }
 
 #window {
-  color: @rosewater;
+  color: @flamingo;
 }
 
 .modules-right,
 .modules-left,
 .modules-center {
-  background-color: @base;
+  background-color: rgba(0, 0, 0, 0.50);
   border-radius: 15px;
 }
 
