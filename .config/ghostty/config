@@ -5,7 +5,7 @@ theme = Stock
 #Display
 
 background = #000000
-background-opacity = 0.7
+background-opacity = 0.8
 background-blur = true
 window-colorspace = display-p3
 resize-overlay = never
