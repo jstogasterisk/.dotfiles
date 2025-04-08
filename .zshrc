@@ -79,6 +79,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias system-info=fastfetch
 alias ff=fastfetch
+alias cd='z'
 alias push='~/.scripts/push.sh'
 alias pull='git pull'
 
