@@ -80,7 +80,7 @@ source $ZSH/oh-my-zsh.sh
 alias system-info=fastfetch
 alias ff=fastfetch
 alias cd='z'
-alias ls='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first'
+alias ls='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first --ignore-glob="Documents |Desktop "'
 alias ll='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first -l --git -h'
 alias la='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first -a'
 alias lla='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first -a -l --git -h'
