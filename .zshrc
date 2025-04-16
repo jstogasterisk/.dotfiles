@@ -83,6 +83,7 @@ alias la='eza --color=always --color-scale=all --color-scale-mode=gradient --ico
 alias lla='eza --color=always --color-scale=all --color-scale-mode=gradient --icons=always --group-directories-first -a -l --git -h'
 alias push='~/.scripts/push.sh'
 alias pull='git pull'
+alias switch='git checkout'
 
 #--------------------------------------------------------------------------------------------------------------------------#
 
